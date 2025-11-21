@@ -1,4 +1,5 @@
-# Add the import statements for necessary sympy functions here
+
+from sympy import symbols, Eq, solve# Add the import statements for necessary sympy functions here
 
 
 ELEMENTS = [
@@ -25,7 +26,6 @@ def generate_equation_for_element(compounds, coefficients, element):
             equation += coefficients[i] * compound[element]
     return equation
 
-from sympy import symbols, Eq, solve
 
 def build_equations(reactant_atoms, product_atoms):
     """Builds a list of symbolic equations for each element to balance a chemical reaction.  
