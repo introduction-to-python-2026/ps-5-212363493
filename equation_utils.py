@@ -25,7 +25,7 @@ def generate_equation_for_element(compounds, coefficients, element):
             equation += coefficients[i] * compound[element]
     return equation
 
-
+from sympy import symbols
 def build_equations(reactant_atoms, product_atoms):
     """Builds a list of symbolic equations for each element to balance a chemical reaction.  
     Example: For H2 + O2 -> H2O, returns equations [2*a0 - 2*b0, a1 - b0]."""
