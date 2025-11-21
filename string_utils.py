@@ -23,7 +23,7 @@ def split_before_uppercases(formula):
 
 def split_at_digit(formula):
     for i in range (len(formula)):
-    if formula[i].isdigit():
+     if formula[i].isdigit():
       return formula [:i], int(formula [i:])    
   return formula, 1   
 
